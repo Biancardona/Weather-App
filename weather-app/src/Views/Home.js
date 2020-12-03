@@ -4,7 +4,7 @@ import {useFetch} from '../Components/UseFetch';
 
 
 
-export default function CityWeather ({ city }) {
+export default function CityWeather ({city}) {
     console.log(city);
     const data = useFetch(city);
     console.log(data);
@@ -17,7 +17,7 @@ export default function CityWeather ({ city }) {
                        
                     
                     <div> 
-                                {"Icon: " + data.weather}
+                                {"Icon: " + data.weather[0].main}
                                </div>
                 
                     </div>
