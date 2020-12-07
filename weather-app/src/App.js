@@ -1,12 +1,13 @@
 import React from 'react';
-import Home from './Views/Home';
+import WeatherResults from './Views/WeatherResults';
+import Home from'./Views/Home';
 
 function App() {
   return (
     <div >
       <header >
-       
-         <Home  city={"London"} /> 
+       <Home/>
+         <WeatherResults  city={"London"} /> 
          </header>
       
     </div>

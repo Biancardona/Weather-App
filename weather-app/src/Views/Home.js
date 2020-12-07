@@ -1,29 +1,21 @@
 import React from 'react';
-import {useFetch} from '../Components/UseFetch';
+import SearchButton from '../Components/SearchButton';
 
 
 
+const Home = () => {
 
-export default function CityWeather ({city}) {
-    console.log(city);
-    const data = useFetch(city);
-    console.log(data);
-    return(
-   
+    return (
+       
+                <div className="columns is-multiline">
+                    <div className="column"></div>
 
-        <div className="container">
-            <div className="row">
-     
-                       
-                    
-                    <div> 
-                                {"Icon: " + data.weather[0].main}
-                               </div>
-                
-                    </div>
-                </div>
-    
- 
-);
+                    <header>
+                        <SearchButton> </SearchButton>
+                    </header>
+
+        </div>
+    );
 }
 
+export default Home;
