@@ -21,9 +21,23 @@ const SearchResult = (props) => {
    const ShowData = () => {
     if (!_.isEmpty(searchState.data[cityName])) {
          const weatherData = searchState.data[cityName];
+         const iconUrl = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"
+
              return(
              <div >
-              {weatherData.weather[0].main}
+              {"Weather: " + weatherData.weather[0].main}
+              <br />
+              {"Description: " + weatherData.weather[0].description}
+              <br />
+              {"Temp: " + weatherData.main.temp}
+              <br/>
+              {"Temp_Min: " + weatherData.main.temp_min}
+              <br/>
+              {"Temp_Max: " + weatherData.main.temp_max}
+              <br/>
+              {"Humidity: " + weatherData.main.humidity}
+              <br/>
+              <img src={iconUrl}/>
              </div>
              )
          }

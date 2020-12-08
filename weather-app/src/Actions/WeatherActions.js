@@ -9,7 +9,7 @@ export  const GetWeatherData = (citySearch)=> async dispatch => {
         });
   
 
-    const res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=${API_key}`) //fetch request.
+    const res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=${API_key}&units=metric`) //fetch request.
     dispatch({
         type: "WEATHER_DATA_SUCCESS",
         payload: res.data,
