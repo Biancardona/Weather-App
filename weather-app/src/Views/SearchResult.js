@@ -21,7 +21,7 @@ const SearchResult = (props) => {
    const ShowData = () => {
     if (!_.isEmpty(searchState.data[cityName])) {
          const weatherData = searchState.data[cityName];
-         const iconUrl = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"
+         const iconUrl = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"
 
              return(
              <div >
