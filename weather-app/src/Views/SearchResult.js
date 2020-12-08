@@ -10,7 +10,7 @@ const SearchResult = (props) => {
   
     const cityName = props.match.params.id;
     const dispatch = useDispatch();
-    const searchState= useSelector(state => state.SearchResult);
+    const searchState= useSelector(state => state.WeatherReducer);
     console.log(searchState);
 
    React.useEffect(() => {

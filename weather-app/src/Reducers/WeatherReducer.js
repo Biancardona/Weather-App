@@ -4,7 +4,7 @@ const DefaultState = {
     errorMsg: "",
   };
   
-  const DataReducer = (state = DefaultState, action) => {
+  const WeatherReducer = (state = DefaultState, action) => {
     switch (action.type) {
       case "WEATHER_DATA_LOADING":
         return {
@@ -34,4 +34,4 @@ const DefaultState = {
     }
   };
   
-  export default DataReducer;
+  export default WeatherReducer;
