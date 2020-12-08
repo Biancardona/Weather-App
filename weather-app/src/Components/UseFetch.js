@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react';
 const API_key  = 'e8d81274510e0cf2a8156f89e368b886';
 
 
@@ -20,4 +20,4 @@ useEffect(() => {
 
   return data;
 
-}
+} */

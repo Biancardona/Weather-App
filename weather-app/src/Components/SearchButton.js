@@ -1,11 +1,11 @@
-import React from 'react';
+ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { FormControl } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function SearchForm() {
+export default function SearchButton() {
     const history = useHistory();
     let input = '';
 
@@ -15,7 +15,7 @@ export default function SearchForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        history.push(`/allmovies/${input}`);
+        history.push(`/city/${input}`);
     };
 
     return (

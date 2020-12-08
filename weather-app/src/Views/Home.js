@@ -3,6 +3,7 @@ import SearchButton from '../Components/SearchButton';
 
 
 
+
 const Home = () => {
 
     return (
@@ -12,6 +13,7 @@ const Home = () => {
 
                     <header>
                         <SearchButton> </SearchButton>
+                      
                     </header>
 
         </div>
