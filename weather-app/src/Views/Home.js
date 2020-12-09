@@ -1,5 +1,9 @@
 import React from 'react';
 import SearchButton from '../Components/SearchButton';
+import NavBar from '../Components/Navbar';
+import {Jumbotron} from 'react-bootstrap';
+import '../Style/custom.css';
+
 
 
 
@@ -7,16 +11,28 @@ import SearchButton from '../Components/SearchButton';
 const Home = () => {
 
     return (
-       
-                <div className="columns is-multiline">
+    <div >
+            <div className="columns is-multiline">
                     <div className="column"></div>
-
                     <header>
+              <NavBar> </NavBar>
+          </header>
+      
+        <div className= "container "> 
+        <Jumbotron>
+        <div  className="bg"> 
+          <div> 
                         <SearchButton> </SearchButton>
                       
-                    </header>
-
+                        </div>
+                        </div>
+                        </Jumbotron>
         </div>
+        </div>
+        </div>
+     
+      
+       
     );
 }
 

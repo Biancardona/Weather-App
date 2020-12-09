@@ -1,8 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Style/custom.css';
 import {GetWeatherData} from '../Actions/WeatherActions';
 import { useSelector, useDispatch } from 'react-redux';
 import _ from "lodash";
 import React from 'react';
+import NavBar from '../Components/Navbar';
+import BackTo from "../Components/LinkBackTo";
+
+
 
 
 
@@ -24,6 +29,7 @@ const SearchResult = (props) => {
          const iconUrl = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"
 
              return(
+      
              <div >
               {"Weather: " + weatherData.weather[0].main}
               <br />
@@ -54,9 +60,16 @@ const SearchResult = (props) => {
      }
     return(
         <div>
+                  <header>
+              <NavBar> </NavBar>
+          </header>
         
-        <h1>{cityName}</h1>
+        
+        <h1> Results for weather in {cityName}</h1>
+      
         {ShowData()}
+        <BackTo move="/" nameback="Weather Search"/>
+       
       </div>
     )
   };
