@@ -21,6 +21,7 @@ const Home = () => {
         <div className= "container "> 
         <Jumbotron>
         <div  className="bg"> 
+        <h2> Enter a city to know the weather </h2>
           <div> 
                         <SearchButton> </SearchButton>
                       

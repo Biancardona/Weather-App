@@ -3,7 +3,7 @@ body, html {
     background-color: rgba(230, 193, 28, 0.856);
   }
   .jumbotron {
-    background-image: url("../Assets/h.jpg");
+    background-image: url("../Assets/HOME.jpg"); 
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat repeat;
@@ -12,22 +12,57 @@ body, html {
     margin-top: 30px;
     margin-bottom: 100px;
     padding: 100px;
-    border-radius:10px;
+    border-radius:20px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
+  .bg{
+      margin-top: 50px;
+  }
 
-.jumbotron .bg {
+.jumbotron, .bg {
     background-color: #ffffff73;
-    padding:50px;
+    padding:40px;
     background-position: center;
+}
+.jumbotron, .bg1 {
+    background-color: #ffffff73;
+    padding:5vh;
+    background-position: center;
+}
 
-}
-.form-inline {
-    margin-left: 25vh;
-}
 .bg-light {
     background-color: black!important;
 }
 .navbar-light .navbar-brand {
-    color: yellow;
+    color: rgba(230, 193, 28, 0.856);
+    font-weight: bolder;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media(max-width: 640px) {
+    .jumbotron {
+       padding: 0%;
+       padding-top: 50px;
+    }
+    .form-control{
+        margin-bottom: 10px;
+    }
+    .jumbotron .bg {
+      margin: 20px;
+    
+    
+    }
+    .jumbotron .bg1 {
+        margin: 5px;
+        padding-top: 10px;
+        padding:10px;
+      
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

@@ -14,7 +14,7 @@ const NavBar = () => {
     return (
 
         <Navbar bg="light"  expand="lg">
-            <Navbar.Brand onClick={homeRoute} href="#home">Weather App</Navbar.Brand>
+            <Navbar.Brand onClick={homeRoute} href="/">Weather App</Navbar.Brand>
         </Navbar>
     );
 }

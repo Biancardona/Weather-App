@@ -20,7 +20,7 @@ export default function SearchButton() {
 
     return (
 
-        <Form onSubmit={handleSubmit} inline>
+        <Form  onSubmit={handleSubmit} inline>
             <FormControl onChange={handleChange} type="text" placeholder="Search" className="mr-sm-2" />
             <Button type="submit" variant="outline-success">Search</Button>
         </Form>
